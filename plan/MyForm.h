@@ -839,64 +839,64 @@ private: System::Void checkBox7_CheckedChanged(System::Object^ sender, System::E
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {;
 	   if (this->pn->Text != "")
 	   {
-		   if (System::Convert::ToInt16(this->comboBox8->Text) > DateTime::Today.Month)
+		   if (System::Convert::ToInt16(this->comboBox8->Text) < DateTime::Today.Month)
 			   this->pn->ForeColor = Color::Red;
 		   if (System::Convert::ToInt16(this->comboBox8->Text) == DateTime::Today.Month)
-			   if (System::Convert::ToInt16(this->comboBox1->Text) > DateTime::Today.Day)
+			   if (System::Convert::ToInt16(this->comboBox1->Text) < DateTime::Today.Day)
 				   this->pn->ForeColor = Color::Red;
 	   }
 
 	if (this->vt->Text != "")
 	{
-		if (System::Convert::ToInt16(this->comboBox9->Text) > DateTime::Today.Month)
+		if (System::Convert::ToInt16(this->comboBox9->Text) < DateTime::Today.Month)
 			this->vt->ForeColor = Color::Red;
 		if (System::Convert::ToInt16(this->comboBox9->Text) == DateTime::Today.Month)
-			if (System::Convert::ToInt16(this->comboBox2->Text) > DateTime::Today.Day)
+			if (System::Convert::ToInt16(this->comboBox2->Text) < DateTime::Today.Day)
 				this->vt->ForeColor = Color::Red;
 	}
 
 	if (this->sr->Text != "")
 	{
-		if (System::Convert::ToInt16(this->comboBox10->Text) > DateTime::Today.Month)
+		if (System::Convert::ToInt16(this->comboBox10->Text) < DateTime::Today.Month)
 			this->sr->ForeColor = Color::Red;
 		if (System::Convert::ToInt16(this->comboBox10->Text) == DateTime::Today.Month)
-			if (System::Convert::ToInt16(this->comboBox3->Text) > DateTime::Today.Day)
+			if (System::Convert::ToInt16(this->comboBox3->Text) < DateTime::Today.Day)
 				this->sr->ForeColor = Color::Red;
 	}
 
 	if (this->cht->Text != "")
 	{
-		if (System::Convert::ToInt16(this->comboBox11->Text) > DateTime::Today.Month)
+		if (System::Convert::ToInt16(this->comboBox11->Text) < DateTime::Today.Month)
 			this->cht->ForeColor = Color::Red;
 		if (System::Convert::ToInt16(this->comboBox11->Text) == DateTime::Today.Month)
-			if (System::Convert::ToInt16(this->comboBox4->Text) > DateTime::Today.Day)
+			if (System::Convert::ToInt16(this->comboBox4->Text) < DateTime::Today.Day)
 				this->cht->ForeColor = Color::Red;
 	}
 
 	if (this->pt->Text != "")
 	{
-		if (System::Convert::ToInt16(this->comboBox12->Text) > DateTime::Today.Month)
+		if (System::Convert::ToInt16(this->comboBox12->Text) < DateTime::Today.Month)
 			this->pt->ForeColor = Color::Red;
 		if (System::Convert::ToInt16(this->comboBox12->Text) == DateTime::Today.Month)
-			if (System::Convert::ToInt16(this->comboBox5->Text) > DateTime::Today.Day)
+			if (System::Convert::ToInt16(this->comboBox5->Text) < DateTime::Today.Day)
 				this->pt->ForeColor = Color::Red;
 	}
 
 	if (this->sb->Text != "")
 	{
-		if (System::Convert::ToInt16(this->comboBox13->Text) > DateTime::Today.Month)
+		if (System::Convert::ToInt16(this->comboBox13->Text) < DateTime::Today.Month)
 			this->sb->ForeColor = Color::Red;
 		if (System::Convert::ToInt16(this->comboBox13->Text) == DateTime::Today.Month)
-			if (System::Convert::ToInt16(this->comboBox6->Text) > DateTime::Today.Day)
+			if (System::Convert::ToInt16(this->comboBox6->Text) < DateTime::Today.Day)
 				this->sb->ForeColor = Color::Red;
 	}
 
 	if (this->vs->Text != "")
 	{
-		if (System::Convert::ToInt16(this->comboBox14->Text) > DateTime::Today.Month)
+		if (System::Convert::ToInt16(this->comboBox14->Text) < DateTime::Today.Month)
 			this->vs->ForeColor = Color::Red;
 		if (System::Convert::ToInt16(this->comboBox14->Text) == DateTime::Today.Month)
-			if (System::Convert::ToInt16(this->comboBox7->Text) > DateTime::Today.Day)
+			if (System::Convert::ToInt16(this->comboBox7->Text) < DateTime::Today.Day)
 				this->vs->ForeColor = Color::Red;
 	}
 
